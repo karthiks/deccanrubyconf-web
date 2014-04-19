@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: deccanrubyconf_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: deccanrubyconf_test
+  host: localhost

@@ -1,0 +1,35 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Sender</th>
+      <th>Recepients</th>
+      <th>Subject</th>
+      <th>Created at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <% @email_logs.each do |email_log| %>
+    <tr>
+      <td>
+        <%= email_log.sender%>
+      </td>
+      <td>
+        <%= email_log.recepients %>
+      </td>
+      <td>
+        <%= email_log.subject %>
+      </td>
+      <td>
+        <%= email_log.created_at.to_s(:long) %>
+      </td>
+      <td>
+        <%= link_to superadmin_email_log_path(email_log), class: 'btn btn-primary btn-xs' do %>
+          <i class="fa fa-pencil"></i>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+
+</table>
+

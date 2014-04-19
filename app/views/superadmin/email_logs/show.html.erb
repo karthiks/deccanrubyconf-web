@@ -1,0 +1,47 @@
+<div class='row'>
+  <div class='col-sm-12'>
+    <strong>Sender:</strong>
+    <%= @email_log.sender %>
+  </div>
+</div>
+
+<hr />
+
+<div class='row'>
+  <div class='col-sm-12'>
+    <strong>Recepients:</strong>
+    <%= @email_log.recepients %>
+  </div>
+</div>
+
+<hr />
+
+<div class='row'>
+  <div class='col-sm-12'>
+    <strong>Subject:</strong>
+    <%= @email_log.subject %>
+  </div>
+</div>
+
+<hr />
+
+<div class='row'>
+  <div class='col-sm-12'>
+    <strong>Created at:</strong>
+    <%= @email_log.created_at.to_s(:long) %>
+  </div>
+</div>
+
+<hr />
+
+<div class='row'>
+  <div class='col-sm-12'>
+    <strong>Body:</strong>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col-sm-12'>
+    <%= CodeRay.scan(Mail.new(@email_log.body).to_s, :html).div(line_numbers: :table).html_safe %>
+  </div>
+</div>

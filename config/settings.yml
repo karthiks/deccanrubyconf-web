@@ -1,0 +1,63 @@
+common:
+
+  secret_key_base: <%= ENV['SECRET_KEY_BASE'] || SecureRandom.hex(64) %>
+
+  twilio:
+    from_number: <%= ENV['TWILIO_FROM_NUMBER'] %>
+    account_sid: <%= ENV['TWILIO_ACCOUNT_SID'] %>
+    auth_token: <%= ENV['TWILIO_AUTH_TOKEN'] %>
+
+  honeybadger_api_key: <%= ENV['HONEYBADGER_API_KEY'] %>
+
+  aws_s3:
+    access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+    secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+    bucket_name: <%= ENV['AWS_S3_BUCKET_NAME'] %>
+
+  host: lvh.me:3000
+  url_with_port: http://lvh.me:3000
+
+  mailer:
+    default_from_email: "'DeccanRubyConf' <notifications@deccanrubyconf.org>"
+    host_for_email_with_www: www.localhost:3000
+    delivery_method: test
+    smtp_settings:
+      user_name: <%=ENV['MAILTRAP_USERNAME']%>
+      password: <%=ENV['MAILTRAP_PASSWORD']%>
+      address: mailtrap.io
+      port: 2525
+      authentication: plain
+
+test:
+  mailer:
+    delivery_method: :test
+
+development:
+  mailer:
+    delivery_method: :smtp
+
+staging:
+  mailer:
+    host_for_email_with_www: www.deccanrubyconf.org
+    delivery_method: :smtp
+
+  host: deccanrubyconf.org
+  url_with_port: http://deccanrubyconf.org
+
+production:
+  bcc: hello.deccanrubyconf.org
+  mailer:
+    host_for_email_with_www: deccanrubyconf.org
+    delivery_method: :smtp
+
+    smtp_settings:
+      user_name: <%=ENV['SENDGRID_USERNAME']%>
+      password: <%=ENV['SENDGRID_PASSWORD']%>
+      domain: www.deccanrubyconf.org
+      address: smtp.sendgrid.net
+      port: 587
+      authentication: plain
+      enable_starttls_auto: true
+
+  host: www.deccanrubyconf.org
+  url_with_port: http://deccanrubyconf.org
