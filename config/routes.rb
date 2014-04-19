@@ -34,15 +34,6 @@ Deccanrubyconf::Application.routes.draw do
   get "pages/contact_us"
   get "pages/about"
 
-  namespace :api, defaults: { format: :json } do
-    namespace :v1 do
-      devise_scope :user do
-        post 'login' => 'sessions#create', as: 'login'
-      end
-
-      resources :users, only: [:show, :create, :update, :destroy], constraints: { id: /.*/ }
-    end
-  end
 
   namespace :superadmin do
     root to: 'users#index'
