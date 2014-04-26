@@ -26,7 +26,6 @@ require 'mocha/setup'
 MiniTest::Reporters.use!
 
 class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   #
