@@ -4,4 +4,7 @@ class HomeController < ApplicationController
     render
   end
 
+  def landing
+    render 'landing', layout: false
+  end
 end
