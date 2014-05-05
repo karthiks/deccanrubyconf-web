@@ -4,6 +4,8 @@
     DeccanRubyConf
   </title>
   <%= javascript_include_tag "application" %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.js"></script>
+
   <style type="text/css">
       .subnav {
           text-align: center;
@@ -81,16 +83,14 @@
       }
 
       .twIcon {
-          background: url("/assets/header-logo.png");
-          height: 30px;
+          background: url('/assets/deccanRubySprite.jpg') height : 30 px;
           width: 30px;
           display: inline-block;
           background-size: 30px 30px;
       }
 
       .twIconSmall {
-          background: url("/assets/header-logo.png");
-          height: 10px;
+          background: url('/assets/deccanRubySprite.jpg') height : 10 px;
           width: 10px;
           display: inline-block;
           background-size: 10px 10px;
@@ -124,10 +124,68 @@
           font-size: 14px;
           color: #666;
       }
+
+      .jcarousel {
+          position: relative;
+          overflow: hidden;
+      }
+
+      .jcarousel ul {
+          width: 20000em;
+          position: relative;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .jcarousel li {
+          float: left;
+      }
+
+      .deccanRubySprite {
+          background: url('/assets/deccanRubySprite.jpg') no-repeat scroll 0 0 transparent;
+      }
+
+      .smallIcons {
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+      }
+
+      .fbSmallIcon {
+          background-position: 0px 0px;
+      }
+
+      .fbSmallIcon:hover {
+          background-position: 0px -23px;
+      }
+
+      .inSmallIcon {
+          background-position: -25px 0px;
+      }
+
+      .inSmallIcon:hover {
+          background-position: -25px -23px;
+      }
+
+      .twSmallIcon {
+          background-position: -52px 0;
+      }
+
+      .twSmallIcon:hover {
+          background-position: -52px -23px;
+      }
+
+      .gitSmallIcon {
+          background-position: -77px 0;
+      }
+
+      .gitSmallIcon:hover {
+          background-position: -77px -23px;
+      }
   </style>
 </head>
 <body>
-
 <div class="headingWrapper">
   <div class="subnav textAlignCenter">
     <a href="javascript:void(0);">Schedule</a>
@@ -138,7 +196,7 @@
     <a href="javascript:void(0);">Venue</a>
   </div>
   <div class="textAlignCenter">
-    <%= image_tag "header-logo.png", {height: "100", width: "200"}%>
+    <%= image_tag "header-logo.png", { height: "100", width: "200" } %>
 
     <div class="font22 margin15">22nd-23rd June, 2014</div>
     <div class="font14">Save this date to your calendar for<br/>firstever Deccan RubyConf</div>
@@ -148,7 +206,6 @@
     </div>
   </div>
 </div>
-
 <div class="shareWrapper font22 textAlignCenter">
   FOLLOW US ON
   <div class="dIB bgBlue"><span class="twIcon"></span></div>
@@ -157,8 +214,12 @@
 
   <div>
   </div>
-  <div class="sloganCarousel textAlignCenter">
-    some carousel here
+  <div class="jcarousel textAlignCenter">
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
   </div>
 
   <div class="speakerWrapper">
@@ -167,39 +228,39 @@
       for Deccan RubyConf 2014
     </div>
     <div class="speaker dIB">
-      <%= image_tag "speakers/vipul.jpg", {height: "200", width: "200", style:"border-radius: 100px;"}%>
-
-      <div class="speakerName">Vipul A M</div>
-      <div class="speakerDesg">Developer</div>
-      <div class="shareIcons">
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-      </div>
-    </div>
-    <div class="speaker dIB">
-      <%= image_tag "speakers/vipul.jpg", {height: "200", width: "200", style:"border-radius: 100px;"}%>
-
-      <div class="speakerName">Vipul A M</div>
-      <div class="speakerDesg">UI Developer</div>
-      <div class="shareIcons">
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-      </div>
-    </div>
-    <div class="speaker dIB">
-      <%= image_tag "speakers/vipul.jpg", {height: "200", width: "200", style:"border-radius: 100px;"}%>
+      <%= image_tag "speakers/vipul.jpg", { height: "200", width: "200", style: "border-radius: 100px;" } %>
 
       <div class="speakerName">Vipul A M</div>
       <div class="speakerDesg">Designer</div>
       <div class="shareIcons">
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
-        <div class="dIB"><span class="twIconSmall"></span></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons fbSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons inSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons twSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons gitSmallIcon"></a></div>
+      </div>
+    </div>
+    <div class="speaker dIB">
+      <%= image_tag "speakers/vipul.jpg", { height: "200", width: "200", style: "border-radius: 100px;" } %>
+
+      <div class="speakerName">Vipul A M</div>
+      <div class="speakerDesg">Designer</div>
+      <div class="shareIcons">
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons fbSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons inSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons twSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons gitSmallIcon"></a></div>
+      </div>
+    </div>
+    <div class="speaker dIB">
+      <%= image_tag "speakers/vipul.jpg", { height: "200", width: "200", style: "border-radius: 100px;" } %>
+
+      <div class="speakerName">Vipul A M</div>
+      <div class="speakerDesg">Designer</div>
+      <div class="shareIcons">
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons fbSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons inSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons twSmallIcon"></a></div>
+        <div class="dIB"><a href="" class="deccanRubySprite smallIcons gitSmallIcon"></a></div>
       </div>
     </div>
   </div>
@@ -219,7 +280,10 @@
             header = ('.headingWrapper');
     var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
     $(header).attr('style', 'background-image: ' + pattern.dataUrl);
-
+    $('.jcarousel').jcarousel({
+        transitions: true,
+        wrap: 'both'
+    });
 </script>
 </body>
 </html>
