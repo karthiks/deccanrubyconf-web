@@ -6,7 +6,8 @@
 .subnav a {
   display: inline-block;
   margin: 10px;
-  color: #fff;
+  color: #000;
+  font-weight: 900;
 }
 
 .dIB {
@@ -55,6 +56,8 @@
 
 .font22 {
   font-size: 22px;
+  font-weight: 900;
+  color: #000;
 }
 
 .font14 {
@@ -66,12 +69,13 @@
 }
 
 #bookTicket, #bcumSponsor, #bcumSpeaker {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 3px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
   margin: 10px;
-
+  color: #055487;
+  font-weight: 900;
 }
 
 .noLink{
@@ -103,11 +107,20 @@
 }
 
 .bgBlue:hover {
-  background-color: blue;
+  //background-color: blue;
+}
+
+.followUs {
+    margin-right: 25px;
+    width: 70px;
+}
+
+.followUs .twIcon a:hover {
+    background-color: blue;
 }
 
 body {
-  width: 980px;
+  // width: 980px;
   margin: 0 auto;
   text-align: center;
   vertical-align: middle;
@@ -181,4 +194,10 @@ body {
 
 .gitSmallIcon:hover {
   background-position: -77px -23px;
+}
+
+.deccan {
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
 }
