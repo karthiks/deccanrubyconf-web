@@ -17,3 +17,6 @@
 
 //= require ./d3
 //= require ./trianglify
+//= require ./jquery.jcarousel.js
+//= require ./landing
+//= require ./colorbrewer.v1.min

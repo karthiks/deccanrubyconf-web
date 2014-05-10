@@ -5,6 +5,6 @@ class HomeController < ApplicationController
   end
 
   def landing
-    render 'landing', layout: false
+    render
   end
 end

@@ -42,6 +42,5 @@ Deccanrubyconf::Application.routes.draw do
     resources :email_logs
   end
 
-  get '/landing' =>  'home#landing'
-  root 'home#index'
+  root 'home#landing'
 end
