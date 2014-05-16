@@ -1,82 +1,87 @@
-<div class="headingWrapper">
-  <div class="subnav textAlignCenter">
-    <!--<a href="#">Schedule</a>-->
-    <a href="#speakers">Speakers</a>
-    <!--<a href="#">Workshops</a>-->
-    <a href="#">Contact</a>
-    <a href="#">Sponsorship</a>
-    <a href="#">Venue</a>
-    <%= link_to 'CFP', 'https://deccanrubyconf.busyconf.com/proposals/new', target: '_blank' %>
-    <a href="#">Code Of Conduct</a>
-  </div>
-  <div class="textAlignCenter">
-    <div class="deccan">#{ डेक्कन }</div>
-
-    <div class="font22 margin15">19th July, 2014</div>
-    <div class="font14">Save this date to your calendar for<br/>firstever Deccan RubyConf</div>
-    <div class="btnSection textAlignCenter">
-      <div id="bookTicket" class="dIB font14">
-        <%= link_to "BOOK TICKETS NOW", 'http://deccanrubyconf.doattend.com/',
-        { style: 'color: #FFFFFF; text-decoration:none;' }
-        %>
-      </div>
-      <div id="bcumSpeaker" class="dIB font14">
-        <%= link_to "BECOME A SPEAKER", 'https://deccanrubyconf.busyconf.com/proposals/new',
-        { style: 'color: #FFFFFF; text-decoration:none;' }
-        %>
-      </div>
+<div id="container" class="container">
+  <div id="output" class="container"></div>
+  <div id="vignette" class="overlay vignette"></div>
+  <div id="noise" class="overlay noise"></div>
+  <div class="container">
+    <div class="topLinksSec">
+      <ul class="topLinks">
+        <li><a href="javascript:void(0)">Schedule</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="javascript:void(0)">Workshop</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
+        <li><a href="javascript:void(0)">Sponsorship</a></li>
+        <li><a href="javascript:void(0)">Venue</a></li>
+      </ul>
+    </div>
+    <div class="hero-unit">
+      <%= image_tag("logo.png", {width: "352", height: "77"})%>
+      <h1>19th July, 2014</h1>
+      <h2>Save this date to your calendar for</h2>
+      <h3>firstever Deccan RubyConf</h3>
+    </div>
+    <div class="btnsSec">
+      <a class="btn btn-large btn-clear" href="http://deccanrubyconf.doattend.com/">BOOK TICKETS NOW</a>
+      <a class="btn btn-large btn-clear" href="javascript:void(0)">BECOME A SPONSOR</a>
+      <a class="btn btn-large btn-clear" href="https://deccanrubyconf.busyconf.com/proposals/new">BECOME A SPEAKER</a>
     </div>
   </div>
-</div>
+  <div class="btmSec">
+    <div class="folowUsSec">
+      <h1>FOLLOW US ON</h1>
+      <ul class="socialLinks">
+        <li>
+          <%= link_to image_tag('fb-image.jpg', {width: '36', height: '68'}), 'https://www.facebook.com/deccanrubyconf' -%>
 
-<div class="shareWrapper font22 textAlignCenter">
-  FOLLOW US ON
-  <br/>
-  <div class="dIB bgBlue followUs">
-    <span class="twIcon">
-      <%= link_to image_tag('twitter-1.jpg'), 'https://twitter.com/deccanrubyconf' -%>
-    </span>
-  </div>
-  <div class="dIB bgBlue followUs">
-    <span class="twIcon">
-      <%= link_to image_tag('fb.jpg'), 'https://www.facebook.com/deccanrubyconf' -%>
-    </span>
-  </div>
-  <br/>
-  <!--<div class="jcarousel">-->
-    <!--<ul>-->
-      <!--<li>Houde Kharcha</li>-->
-      <!--<li>Houde Kharcha</li>-->
-      <!--<li>Houde Kharcha</li>-->
-    <!--</ul>-->
-  <!--</div>-->
-
-  <div id="speakers" class="speakerWrapper">
-    <div class="textAlignCenter sneakpeakTxt">
-      Our Invited Speakers
+        </li>
+        <li>
+          <%= link_to image_tag('twitter-image.jpg', {width: '83', height: '77'}), 'https://twitter.com/deccanrubyconf' -%>
+        </li>
+      </ul>
     </div>
-    <div class="speaker dIB">
-      <%= image_tag "speakers/satish.png", { height: "200", width: "200", style: "border-radius: 100px;" } %>
-
-      <div class="speakerName">Satish Talim</div>
-      <div class="speakerDesg">RubyLearning.org Founder. Director at Josh Software and Maybole Technologies</div>
-      <div class="shareIcons">
-        <div class="dIB"><a href="https://twitter.com/IndianGuru" class="deccanRubySprite smallIcons twSmallIcon"></a></div>
+    <div id="speakers" class="speakrsSec">
+      <h1>Our Invited Speakers</h1>
+      <div class="speakrsImgsSec">
+        <div class="spkrsImgsSecList floatLeft">
+          <%= image_tag "speakers/satish.png", { height: "250", width: "250" } %>
+          <span>Satish Talim</span>
+          <em>RubyLearning.org Founder. Director at Josh Software and Maybole Technologies</em>
+          <ul class="spkrsSecSociaLinks">
+            <li>
+              <a href="https://www.facebook.com/satishtalim" target="_blank" title="Facebook">
+                <span class="fbSmallIcon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/IndianGuru" target="_blank" title="Twitter">
+                <span class="twiterSmalIcon"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="spkrsImgsSecList floatRight">
+          <%= image_tag "speakers/koichi_sasada.jpg", { height: "250", width: "250" } %>
+          <span>Koichi Sasada</span>
+          <em>Ruby Core, Heroku</em>
+          <ul class="spkrsSecSociaLinks">
+            <li>
+              <a href="https://www.facebook.com/koichi.sasada" target="_blank" title="Facebook">
+                <span class="fbSmallIcon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/_ko1" target="_blank" title="Twitter">
+                <span class="twiterSmalIcon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ko1" target="_blank" title="New">
+                <span class="newSmalIcon"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="speaker dIB">
-      <%= image_tag "speakers/koichi_sasada.jpg", { height: "200", width: "200", style: "border-radius: 100px;" } %>
-
-      <div class="speakerName">Koichi Sasada</div>
-      <div class="speakerDesg">Ruby Core, Heroku</div>
-      <div class="shareIcons">
-        <div class="dIB"><a href="https://twitter.com/_ko1" class="deccanRubySprite smallIcons twSmallIcon"></a></div>
-        <div class="dIB"><a href="https://github.com/ko1" class="deccanRubySprite smallIcons gitSmallIcon"></a></div>
-      </div>
+      <div style="height: 100px;"></div>
     </div>
   </div>
-</div>
-
-<div>
-  <img src=""/>
 </div>

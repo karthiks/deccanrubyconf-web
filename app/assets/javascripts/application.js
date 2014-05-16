@@ -15,8 +15,6 @@
 //= require twitter/bootstrap
 //= require ./bootstrap
 
-//= require ./d3
-//= require ./trianglify
 //= require ./jquery.jcarousel.js
-//= require ./landing
-//= require ./colorbrewer.v1.min
+//= require ./fss.js
+//= require ./main.js
