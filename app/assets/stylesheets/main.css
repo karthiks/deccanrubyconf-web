@@ -258,38 +258,38 @@ body {
 }
 
 .spkrsSecSociaLinks li a span.fbSmallIcon{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat 0 0;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat 0 0;
 }
 
 .spkrsSecSociaLinks li a span.linkdInSmalIcon{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat -25px 0;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat -25px 0;
 }
 
 .spkrsSecSociaLinks li a span.twiterSmalIcon{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat -50px 0;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat -50px 0;
 }
 
 .spkrsSecSociaLinks li a span.newSmalIcon{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat -75px 0;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat -75px 0;
   height: 20px;
   width: 22px;
   display: inline-block;
 }
 
 .spkrsSecSociaLinks li a span.fbSmallIcon:hover{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat 0 -23px;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat 0 -23px;
 }
 
 .spkrsSecSociaLinks li a span.linkdInSmalIcon:hover{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat -25px -23px;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat -25px -23px;
 }
 
 .spkrsSecSociaLinks li a span.twiterSmalIcon:hover{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat -50px -23px;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat -50px -23px;
 }
 
 .spkrsSecSociaLinks li a span.newSmalIcon:hover{
-  background: url('/assets/deccanRubySprite.jpg') no-repeat -75px -23px;
+  background: url('http://deccanrubyconf-production.s3.amazonaws.com/deccanRubySprite.jpg') no-repeat -75px -23px;
 }
 
 .spkrsSecSociaLinks{
