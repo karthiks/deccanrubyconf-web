@@ -125,7 +125,7 @@ body {
 .btn.btn-clear.active {
   border-color: #c44133;
   background: #c44133;
-  color: rgba(255, 255, 255, 255);
+  color: #ffffff;
 }
 
 .controls {
